@@ -1,0 +1,85 @@
+public class Main {
+    public static void main(String[] args) {
+        chast1();
+        people();
+        printThereWords();
+        tri();
+        count();
+        printColor();
+        compareNumbers();
+        chast2();
+
+    }
+
+    public static void chast1(){
+        System.out.println("ЧАСТЬ 1");
+    }
+    public static void people(){
+        System.out.println("Задание 1");
+        System.out.println("***************************************\n"+
+                    "***************************************\n"+
+                    "*************o/xiz|{,/1ctx*************\n"+
+                    "************77L*```````*_1{j***********\n"+
+                    "**********?i```````````````FZ**********\n"+
+                    "**********l`````````````````7**********\n"+
+                    "**********x`````````````````L**********\n"+
+                    "**********m?i`````````````iz1**********\n"+
+                    "************]x```````````x{************\n"+
+                    "********?1w]c>```````````La{]}r********\n"+
+                    "******jSF~```````````````````^xv>******\n"+
+                    "*****l1,```````````````````````*Sj*****\n"+
+                    "****7t```````````````````````````v7****\n"+
+                    "***uL`````````````````````````````t]***\n");
+    }
+    public static void printThereWords(){
+        System.out.println("Задание 2");
+        System.out.println("Orange\n"+
+                "Banana\n"+
+                "Apple\n");
+    }
+    public static void tri(){
+        System.out.println("Задание 3");
+    }
+    public static void count(){
+
+        int a = 4;
+        int b = -2;
+        if (a + b >= 0) {
+            System.out.println("Сумма положительная\n");
+        }
+        else {
+            System.out.println("Сумма отрицательная\n");
+        }
+    }
+    public static void printColor() {
+        int value = 5;
+        if (value < 0) {
+            System.out.println("Задание 4");
+            System.out.println("Красный\n");
+        } else if (value <= 100) {
+            System.out.println("Задание 4");
+            System.out.println("Желтый\n");
+        } else {
+            System.out.println("Задание 4");
+            System.out.println("Зеленый\n");
+        }
+    }
+    public static void compareNumbers() {
+        int a = 5;
+        int b = 10;
+        if (a >= b) {
+            System.out.println("Задание 5");
+            System.out.print("a >= b");
+        } else {
+            System.out.println("Задание 5");
+            System.out.print("a < b");
+        }
+    }
+    public static void chast2(){
+        System.out.println("\n"+
+                "\n"+
+                "\n"+
+                "\n"+
+                "ЧАСТЬ 2");
+    }
+}
