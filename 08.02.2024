@@ -1,0 +1,109 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Car {
+    public static void main(String[] args) {
+        a1();
+        odin();
+        a2();
+        dva();
+        a3();
+        z3();
+        a4();
+        z4();
+        a5();
+        z5();
+        a6();
+        z6();
+        a7();
+
+        a8();
+    }
+
+    public static void a1() {
+        System.out.println("Задание 1");
+    }
+
+    public static void a2() {
+        System.out.println("\n" + "Задание 2");
+    }
+
+    public static void a3() {
+        System.out.println("\n" + "Задание 3");
+    }
+
+    public static void a4() {
+        System.out.println("\n" + "Задание 4");
+    }
+
+    public static void a5() {
+        System.out.println("\n" + "Задание 5");
+    }
+
+    public static void a6() {
+        System.out.println("\n" + "Задание 6");
+    }
+
+    public static void a7() {
+        System.out.println("\n" + "Задание 7");
+    }
+
+    public static void a8() {
+        System.out.println("\n" + "Задание 8");
+    }
+
+    public static void odin() {
+        int[] array = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+                array[i] = 1;
+            } else {
+                array[i] = 0;
+            }
+        }
+
+        System.out.println(Arrays.toString(array));
+    }
+
+    public static void dva() {
+        int[] array = new int[100];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+        System.out.println(Arrays.toString(array));
+    }
+
+    public static void z3() {
+        int[] array = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < array.length; i++)
+            if (array[i] < 6)
+                array[i] *= 2;
+        System.out.println(Arrays.toString(array));
+    }
+
+    public static void z4() {
+        int[][] matrix = new int[4][4];
+        for (int i = 0; i < 4; i++) {
+            matrix[i][i] = 1;
+            matrix[i][4 - i - 1] = 1;
+        }
+        System.out.println(Arrays.deepToString(matrix));
+        for (int i = 0; i < 4; i++)
+            System.out.println(Arrays.toString(matrix[i]));
+    }
+    public static void z5() {
+
+    }
+    public static void z6() {
+        int[] minmax = new int[2];
+        minmax[0] = minmax[1] = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (minmax[0] > array[i])
+                minmax[0] = array[i];
+            if (minmax[1] < array[i])
+                minmax[1] = array[i];
+        }
+        System.out.println(Arrays.toString(array));
+    }
+}
+
