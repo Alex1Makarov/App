@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+        a1();
+        z1();
+        a2();
+        z2();
+    }
+    public static void a1() {
+        System.out.println("Задание 1");
+    }
+    public static void a2() {
+        System.out.println("\n"+"Задание 2");
+    }
+    public static void z1(){
+        String wordsInput[] = {
+                "Тимур",
+                "Ольга",
+                "Саша",
+                "Саша",
+                "Ольга",
+                "Олег",
+                "Олег",
+                "Тимур",
+                "Алексей",
+                "Александр",};
+        Map<String, Long> wordCounter = Arrays.stream(wordsInput)
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+        wordCounter.forEach((k, v) -> System.out.println(k + " встречаеться " + v + " раз"));
+    }
+    public static void z2(){
+
+    }
+}
